@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="tr-box">
+            <div class="blanceDiv">
+            <h2>Expense Tracker</h2>
+                <h3 id="blance">$</h3>
+                <h4>Your Blance</h4>
+            </div>
+            <div class="transaction">
+                <h5>Transaction</h5>
+                <hr>
+            </div>
+            <div class="todos">
+                <!-- <div class="Ccard">
+                       <div class="container">
+                             <div class="left">
+                            <p>Youtube Income</p>
+                            <p>+ $200</p>
+                           </div>
+                            <div class="status credit">
+                                C
+                            </div>
+                       </div>
+                       <div class="lower_card">
+                        <i class="ri-edit-2-line"></i>
+                        <i class="ri-delete-bin-line"></i>
+                       </div>
+                 </div>
+                
+                 <div class="Ccard">
+                    <div class="container">
+                          <div class="left">
+                         <p>Youtube Income</p>
+                         <p>+ $200</p>
+                        </div>
+                         <div class="status debit">
+                             C
+                         </div>
+                    </div>
+                    <div class="lower_card">
+                     <i class="ri-edit-2-line"></i>
+                     <i class="ri-delete-bin-line"></i>
+                    </div>
+              </div> -->
+            </div>
+            <div class="botom_sec">
+                <h3>Add Transaction</h3>
+                <form class="formValue">
+                    <div class="input">
+                        <div>
+                            <label>Text</label>
+                            <input type="text" name="text" id="earning"  placeholder="Expense text....">
+                        </div>
+                        <div>
+                            <label>Amount</label>
+                            <input type="number" name="num" id="expance" placeholder="Expense text....">
+                        </div>
+                    </div>
+                    <div class="button_sec">
+                        <button type="submit" class="credit" id="credit">
+                            <p class="btnEar"></p>
+                            <p>Earning</p>
+                        </button>
+                        <button type="submit" class="debit" id="debit">
+                            <p class="btnExp"></p>
+                            <p>Expense</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
