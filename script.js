@@ -9,6 +9,8 @@ const status = {
     ]
 }
 
+let isupdate = false;
+let tid;
 
 const  addFun =(e) =>{
     e.preventDefault()
@@ -28,7 +30,8 @@ const  addFun =(e) =>{
     }
     if(isupdate){
         let tindex =status.transactions.findIndex(t =>t.id === tid)
-        status.transactions[tindex] = transactions
+        status.transactions[tindex] = transaction;
+
         isupdate = false
         tid = null
         }
@@ -36,7 +39,7 @@ const  addFun =(e) =>{
         
         else{
         status.transactions.push(transaction)
-                                                }
+}
 
     showFun()
     formValue.reset()
@@ -127,14 +130,15 @@ function editbtn (id){
 
      earning.value = text
      expand.value = amount
+
+
      tid = id;
+     isupdate = true
 
 }
 
 function deletebtn (id){
-  const filtertr =  status.transactions.filter((value,index) => {
-        value.id === id
-    })
+  const filtertr =  status.transactions.filter(value => value.id !== id)
     status.transactions = filtertr
     showFun()
 }
